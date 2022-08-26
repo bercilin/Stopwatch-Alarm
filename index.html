@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/8e4ae8d700.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Alarm & Stopwatch</title>
+</head>
+
+<body>
+
+
+
+    <!-- DIGITAL CLOCK -->
+
+
+
+
+    <div class="time">
+        <h3 class="text-center text-danger mb-5">Digital Clock</h3>
+        <span id="hours"></span>
+        <span>:</span>
+        <span id="minute"></span>
+        <span>:</span>
+        <span id="seconds"></span>
+        <span id="session"></span>
+
+    </div>
+
+
+
+    <!-- SET ALARM -->
+
+
+
+
+    <div class="setalarm">
+
+        <h3 class="text-center text-danger mb-5">Set Alarm</h3>
+
+
+        <label for="length">Hour</label>
+        <input type="number" id="ahour" min="1" max="12" value="">
+
+
+
+
+        <label for="length">Minute</label>
+        <input type="number" id="aminute" min="0" max="59" value="">
+
+
+
+        <label for="length">Session</label>
+        <select name="" id="asession">
+            <option value="AM">AM</option>
+            <option value="PM">PM</option>
+        </select>
+
+
+        <div class="text-center mt-5">
+            <button class="btn btn-success mr-3" id="create-alarm">create alarm</button>
+            <button class="btn btn-danger" id="cancel-alarm">cancel alarm</button>
+        </div>
+
+    </div>
+
+
+
+    <!-- STOPWATCH -->
+
+
+
+    <div class="timerOutput">
+
+        <h3 class="text-center text-danger mb-3">StopWatch</h3>
+
+        <span id="stopwatch">00 : 00 : 00 : 000</span>
+
+        <div class="text-center">
+            <button class="btn btn-success" id="startTimer">Start</button>
+            <button class="btn btn-primary" id="pauseTimer">Pause</button>
+            <button class="btn btn-danger" id="resetTimer">Reset</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
